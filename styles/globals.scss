@@ -1,0 +1,50 @@
+@import "../components/one-example/index.scss";
+@import "../components/another-example/index.scss";
+
+@font-face {
+    font-family: "Geometria";
+    src: url("../fonts/GeometriaMedium.woff") format("woff");
+    font-style: normal;
+    font-weight: 500;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Geometria";
+    src: url("../fonts/GeometriaBold.woff") format("woff");
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Geometria";
+    src: url("../fonts/GeometriaExtraBold.woff") format("woff");
+    font-style: normal;
+    font-weight: 800;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Geometria";
+    src: url("../fonts/GeometriaExtraBold.woff") format("woff");
+    font-style: normal;
+    font-weight: 900;
+    font-display: swap;
+}
+
+body {
+    font-family: "Geometria";;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    color: #FFFFFF;
+    background-color: #000000;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
