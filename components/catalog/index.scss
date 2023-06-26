@@ -1,6 +1,7 @@
 .catalog {
     display: flex;
     column-gap: 25px;
+    max-width: 1440px;
     padding: 20px;
     margin: 0 auto;
 
@@ -9,4 +10,12 @@
         row-gap: 20px;
         padding: 16px;
     }
+}
+
+.catalog__products {
+    flex-grow: 1;
+}
+
+.catalog__filters {
+    flex-shrink: 0;
 }

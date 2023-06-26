@@ -1,6 +1,6 @@
 export const Filters = () => {
     return (
-        <div className="filters">
+        <div className="catalog__filters filters">
             <form className="filters__search-form">
                 <label className="visually-hidden" htmlFor="search"></label>
                 <input className="filters__search-input" id="search" type="text" placeholder="Search"></input>
@@ -15,7 +15,7 @@ export const Filters = () => {
                     </label>
                 </li>
                 <li className="filters__item">
-                    <input className="filters__option visually-hidden" type="checkbox" id="rs11" checked></input>
+                    <input className="filters__option visually-hidden" type="checkbox" id="rs11"></input>
                     <label className="filters__control" htmlFor="rs11">
                         <span className="filters__label">RS-11 Line&nbsp;
                             <span className="filters__count">2</span>

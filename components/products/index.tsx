@@ -1,6 +1,6 @@
 export const Products = () => {
     return (
-        <ul className="products">
+        <ul className="catalog__products products">
             <li className="product-cart product-cart--discount">
                 <div className="product-cart__img-container">
                     <picture>
