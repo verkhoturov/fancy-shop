@@ -1,0 +1,12 @@
+.catalog {
+    display: flex;
+    column-gap: 25px;
+    padding: 20px;
+    margin: 0 auto;
+
+    @media (max-width: 600px) {
+        flex-direction: column;
+        row-gap: 20px;
+        padding: 16px;
+    }
+}
