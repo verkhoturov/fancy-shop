@@ -11,9 +11,11 @@
 }
 
 .filters__search-form {
+    margin-bottom: 16px;
+    flex-grow: 1;
 
     @media (max-width: 600px) {
-        flex-grow: 1;
+        margin-bottom: 10px;
     }
 }
 
@@ -30,7 +32,6 @@
     outline: none;
     width: 100%;
     padding: 22px 20px 23px 50px;
-    margin-bottom: 16px;
 
     &::placeholder {
         color: #eaedbd;
@@ -50,7 +51,7 @@
 
     @media (max-width: 600px) {
         flex-wrap: nowrap;
-        column-gap: 8px;
+        column-gap: 9px;
         overflow-x: scroll;
     }
 }
