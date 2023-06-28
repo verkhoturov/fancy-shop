@@ -3,7 +3,7 @@ import { Products } from "../products";
 
 export const Catalog = () => {
     return (
-        <section className="catalog">
+        <section className="section catalog">
             <Filters />
             <Products />
         </section>

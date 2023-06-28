@@ -4,7 +4,7 @@
     justify-content: start;
     column-gap: 5px;
 
-    @media (max-width: 600px) {
+    @media (max-width: 1023px) {
         column-gap: 4px;
     }
 }
@@ -22,7 +22,7 @@
         box-shadow: 0px 0px 0px 3px #1d1c1c inset;
     }
 
-    @media (max-width: 600px) {
+    @media (max-width: 1023px) {
         width: 10px;
         height: 10px;
 
