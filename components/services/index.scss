@@ -1,8 +1,9 @@
 .services {
-    margin-bottom: 30px;
-
     @media (max-width: 1023px) {
-        margin-bottom: 36px;
+        padding-bottom: 50px;
+    }
+    @media (max-width: 359px) {
+        padding-bottom: 30px;
     }
 }
 
@@ -51,6 +52,10 @@
         &--international .services__desc {
             width: auto;
         }
+    }
+
+    @media (max-width: 359px) {
+        padding: 12px;
     }
 }
 

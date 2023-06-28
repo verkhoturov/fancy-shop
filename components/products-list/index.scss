@@ -3,8 +3,11 @@
     grid-template-columns: repeat(3, 1fr);
     gap: 28px 27px;
 
-    @media (max-width: 1023px) {
+    @media (max-width: 1279px) {
         grid-template-columns: repeat(2, 1fr);
+    }
+
+    @media (max-width: 1023px) {
         row-gap: 12px;
         column-gap: 3%;
     }
@@ -13,7 +16,7 @@
         display: flex;
         column-gap: 27px;
 
-        @media (max-width: 600px) {
+        @media (max-width: 1023px) {
             column-gap: 12px;
         }
     }

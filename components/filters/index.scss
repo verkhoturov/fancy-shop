@@ -10,6 +10,10 @@
     }
 }
 
+.filters__option {
+    display: none;
+}
+
 .filters__search-form {
     margin-bottom: 16px;
     flex-grow: 1;
@@ -53,6 +57,7 @@
         flex-wrap: nowrap;
         column-gap: 9px;
         overflow-x: scroll;
+        padding-bottom: 8px;
     }
 }
 

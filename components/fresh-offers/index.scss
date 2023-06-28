@@ -4,7 +4,7 @@
     margin: 0 auto;
     margin-bottom: 140px;
 
-    @media (max-width: 600px) {
+    @media (max-width: 1023px) {
         width: 360px;
         padding-left: 16px;
         margin-bottom: 88px;
@@ -18,7 +18,7 @@
     text-transform: uppercase;
     margin-bottom: 30px;
 
-    @media (max-width: 600px) {
+    @media (max-width: 1023px) {
         font-size: 18px;
         line-height: 125%;
         letter-spacing: 0.9px;

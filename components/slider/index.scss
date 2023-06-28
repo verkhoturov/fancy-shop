@@ -1,9 +1,5 @@
 .slider {
-    max-width: 1440px;
-    margin-bottom: 24px;
-
     @media (max-width: 1023px) {
-        margin-bottom: 12px;
     }
 }
 
@@ -27,6 +23,10 @@
         flex-wrap: wrap;
         row-gap: 47px;
         padding: 35px 17px 20px;
+    }
+
+    @media (max-width: 359px) {
+        padding: 35px 12px 20px;
     }
 }
 

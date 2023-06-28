@@ -1,0 +1,136 @@
+.footer {
+    @media (max-width: 1023px) { 
+    }
+}
+
+.footer__menu {
+    background: #1D1C1C;
+    height: 141px;
+
+    display: flex;
+    align-items: center;
+
+    padding: 20px 0;
+
+    @media (max-width: 1023px) {
+        height: 60px;
+        padding: 16px 0;
+    }
+}
+
+
+.footer__inner {
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding-bottom: 0;
+}
+
+.footer__logo {
+    width: 139px;
+    height: 47px;
+
+    @media (max-width: 1023px) {
+        width: 87px;
+        height: 29px;
+    }
+}
+
+.footer__nav {
+    > ul {
+        display: flex;
+        align-items: center;
+
+        > li {
+            margin-right: 61px;
+
+            > a {
+                color: white;
+                opacity: 0.6;
+            }
+        }
+    }
+
+    @media (max-width: 1023px) {
+        display: none;
+    }
+}
+
+.footer__soc {
+    @media (max-width: 1023px) {
+        svg {
+            width: 45px;
+            height: 16px;
+        }
+    }
+}
+
+.footer__contacts {
+    padding: 45px 20px 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    @media (max-width: 1279px) {
+        display: block;
+        padding: 16px 16px 45px;
+    }
+}
+
+.footer__note {
+
+    flex: 0 0 736px;
+    max-width: 736px;
+
+    margin-right: 45px;
+
+    > p {
+        font-size: 12px;
+        line-height: normal;
+        letter-spacing: 0.6px;
+    }
+
+    @media (max-width: 1023px) {
+        flex: 0 0 100%;
+        max-width: 100%;
+
+        margin-right: 0;
+
+        margin-bottom: 12px;
+
+        > p {
+            font-size: 7px;
+            letter-spacing: 0.35px;
+        }
+    }
+}
+
+.footer__address {
+
+    flex: 0 0 290px;
+    max-width: 290px;
+
+    > p, > address {
+        font-size: 12px;
+        line-height: normal;
+        letter-spacing: 0.6px;
+
+        > a {
+            display: inline;
+            color: white;
+        }
+    }
+
+    @media (max-width: 1023px) {
+        flex: 0 0 100%;
+        max-width: 100%;
+
+        > p, > address {
+            font-size: 7px;
+            letter-spacing: 0.35px;
+        }
+    }
+}

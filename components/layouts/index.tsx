@@ -5,7 +5,7 @@ interface Props {
   children?: ReactNode;
 }
 
-export const Main = ({ children }: Props) => <main>{children}</main>;
+export const Main = ({ children }: Props) => <main className="main">{children}</main>;
 
 export const Section = ({ children }: Props) => (
   <section className={styles.section}>{children}</section>

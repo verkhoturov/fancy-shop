@@ -2,12 +2,10 @@
     display: flex;
     column-gap: 25px;
     margin: 0 auto;
-    margin-bottom: 94px;
 
     @media (max-width: 1023px) {
         flex-direction: column;
-        row-gap: 20px;
-        margin-bottom: 50px;
+        row-gap: 12px;
     }
 }
 
