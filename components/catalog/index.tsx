@@ -1,11 +1,11 @@
 import { Filters } from "../filters";
-import { Products } from "../products";
+import { ProductsList } from "../products-list";
 
 export const Catalog = () => {
     return (
         <section className="catalog">
             <Filters />
-            <Products />
+            <ProductsList />
         </section>
 
 

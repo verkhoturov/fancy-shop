@@ -3,11 +3,17 @@
 @import "../components/button/index.scss";
 @import "../components/slider/index.scss";
 @import "../components/services/index.scss";
-@import "../components/product-cart/index.scss";
-@import "../components/products/index.scss";
+@import "../components/product-card/index.scss";
+@import "../components/products-list/index.scss";
 @import "../components/catalog/index.scss";
 @import "../components/filters/index.scss";
 @import "../components/pagination/index.scss";
+@import "../components/product/index.scss";
+@import "../components/product-slider/index.scss";
+@import "../components/features/index.scss";
+@import "../components/fresh-offers/index.scss";
+@import "../components/product-detail/index.scss";
+@import "../components/rating/index.scss";
 
 
 @font-face {
@@ -39,6 +45,14 @@
     src: url("../fonts/GeometriaExtraBold.woff") format("woff");
     font-style: normal;
     font-weight: 900;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Roboto";
+    src: url("../fonts/RobotoBold.woff") format("woff");
+    font-style: normal;
+    font-weight: 700;
     font-display: swap;
 }
 
