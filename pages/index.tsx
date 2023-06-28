@@ -1,10 +1,12 @@
 import { Page } from "../components/page";
-import { OneExample } from "../components/one-example";
-import { AnotherExample } from "../components/another-example";
+import { Slider } from "../components/slider";
+import { Services } from "../components/services";
+import { Catalog } from "../components/catalog";
 
 export default function Home() {
   return <Page>
-    <OneExample />
-    <AnotherExample />
+    <Slider />
+    <Services />
+    <Catalog />
   </Page>;
 }

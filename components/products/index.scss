@@ -1,0 +1,11 @@
+.products {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 28px 27px;
+
+    @media (max-width: 600px) {
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: 12px;
+        column-gap: 3%;
+    }
+}
