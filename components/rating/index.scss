@@ -1,0 +1,32 @@
+.rating {
+    padding: 80px 98px 88px 123px;
+    border-radius: 24px;
+}
+
+.rating__title {
+    font-weight: 700;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.rating__number {
+    font-weight: 800;
+    font-size: 72px;
+    line-height: 130%;
+    letter-spacing: 3.6px;
+    text-transform: uppercase;
+}
+
+.rating__stars {
+    display: flex;
+    column-gap: 6px;
+}
+
+.rating__star {
+    stroke: #858573;
+
+    &--active {
+        stroke: #eaedbd;
+        fill: #eaedbd;
+    }
+}

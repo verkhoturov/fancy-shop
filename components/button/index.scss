@@ -16,9 +16,9 @@
     }
 
     &--slider {
+        font-weight: 700;
         font-size: 14px;
         line-height: 18px;
-        font-weight: 700;
         border: currentColor;
 
         @media (max-width: 1023px) {
@@ -27,7 +27,7 @@
             line-height: 12px;
         }
     }
-    
+
     &--product {
         min-width: 125px;
         padding: 11px 12px;
@@ -44,6 +44,19 @@
             text-transform: uppercase;
             background-color: inherit;
             color: #fff;
+        }
+    }
+
+    &--buying {
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 18px;
+        padding: 14px 35px;
+
+        @media (max-width: 600px) {
+            font-size: 12px;
+            line-height: 100%;
+            padding: 12px 21px;
         }
     }
 }
