@@ -1,0 +1,27 @@
+.fresh-offers {
+    width: 1440px;
+    padding-left: 25px;
+    margin: 0 auto;
+    margin-bottom: 140px;
+
+    @media (max-width: 600px) {
+        width: 360px;
+        padding-left: 16px;
+        margin-bottom: 88px;
+    }
+}
+
+.fresh-offers__title {
+    font-weight: 900;
+    font-size: 28px;
+    letter-spacing: 1.4px;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+
+    @media (max-width: 600px) {
+        font-size: 18px;
+        line-height: 125%;
+        letter-spacing: 0.9px;
+        margin-bottom: 20px;
+    }
+}
