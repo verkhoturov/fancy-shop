@@ -7,7 +7,12 @@
     background: #1d1c1c;
     position: relative;
     width: 380px;
-    height: 100vw;
+    height: calc(100vh - 48px);
+
+    @media (max-width: 1023px) {
+        border: unset;
+        width: 100%;
+    }
 }
 
 .cart__closed-button {
@@ -121,6 +126,11 @@
     width: 32px;
     background-color: #21211e;
     color: #fbffca;
+    padding-left: 12px;
+
+    @media (max-width: 1023px) {
+        padding-left: 0;
+    }
 }
 
 .cart__delete-button {

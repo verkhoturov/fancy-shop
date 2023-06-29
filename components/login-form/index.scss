@@ -1,7 +1,7 @@
 .login-form {
     width: 42%;
     padding: 48px 64px 64px;
-    margin: 0 auto;
+    margin: 40px auto;
     border-radius: 24px;
     background: #1d1c1c;
 
@@ -24,6 +24,7 @@
 
     @media (max-width: 1023px) {
         margin-bottom: 21px;
+        width: 100%;
     }
 }
 

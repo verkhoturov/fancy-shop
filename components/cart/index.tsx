@@ -1,9 +1,9 @@
 import { CrossIcon } from './icon';
 
-export const Cart = () => {
+export const Cart = ({ onClose }: { onClose: () => void }) => {
     return (
         <div className="cart">
-            <button className="cart__closed-button" type="button">
+            <button onClick={onClose} className="cart__closed-button" type="button">
                 <CrossIcon />
             </button>
             <h2 className="cart__title">Cart</h2>

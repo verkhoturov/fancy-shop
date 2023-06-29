@@ -1,4 +1,7 @@
+import { useRouter } from 'next/router';
+
 export const NewPassword = () => {
+    const router = useRouter();
     return (
         <div className="new-password">
             <h1 className="new-password__title">Set up your password</h1>
@@ -29,7 +32,11 @@ export const NewPassword = () => {
                         required
                     />
                 </div>
-                <button type="submit" className="form__button button button--form">
+                <button
+                    onClick={() => router.push('/')}
+                    type="submit"
+                    className="form__button button button--form"
+                >
                     Change password
                 </button>
             </form>
