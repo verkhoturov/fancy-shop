@@ -1,1 +1,73 @@
-// *Тут стили для элемента формы*
+.form-item {
+    display: flex;
+    flex-direction: column;
+    row-gap: 12px;
+
+    @media (max-width: 1023px) {
+        row-gap: 7px;
+    }
+}
+
+.form-item__label {
+    font-weight: 700;
+
+    @media (max-width: 1023px) {
+        font-size: 12px;
+    }
+}
+
+.form-item__input {
+    font-family: Geometria;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 100%;
+    border-radius: 8px;
+    border: 1px solid #858573;
+    color: #ffffff;
+    background-color: #343434;
+    padding: 13px 16px;
+    flex-grow: 1;
+
+    &::placeholder {
+        font-family: Geometria;
+        font-style: normal;
+        font-weight: 500;
+        font-size: inherit;
+        line-height: 100%;
+        color: #ffffff;
+        opacity: 0.3;
+    }
+
+    &--error {
+        border: 1px solid #d62c2c;
+        margin-bottom: 12px;
+    }
+
+    &:focus {
+        border: 1px solid #eaedbd;
+        outline: none;
+    }
+
+    &--error:focus {
+        border: 1px solid #d62c2c;
+    }
+
+    @media (max-width: 1023px) {
+        padding: 9px 16px 11px;
+        font-size: 12px;
+    }
+}
+
+.form-item__notice {
+    font-weight: 800;
+    line-height: 125%;
+    opacity: 0.3;
+    margin-top: 7px;
+
+    @media (max-width: 1023px) {
+        width: 264px;
+        font-size: 12px;
+        font-weight: 800;
+        line-height: 125%;
+    }
+}

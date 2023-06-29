@@ -1,0 +1,48 @@
+.new-password {
+    width: 42%;
+    padding: 48px 64px 56px;
+    margin: 0 auto;
+    border-radius: 24px;
+    background: #1d1c1c;
+
+    @media (max-width: 1023px) {
+        width: 91%;
+        padding: 24px 20px 32px;
+        border-radius: 12px;
+    }
+}
+
+.new-password__title {
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 125%;
+    margin-bottom: 40px;
+
+    @media (max-width: 1023px) {
+        font-size: 18px;
+        margin-bottom: 20px;
+    }
+}
+
+.new-password__form {
+    row-gap: 32px;
+
+    @media (max-width: 1023px) {
+        row-gap: 16px;
+    }
+}
+
+.new-password__form .form__item:last-of-type {
+    margin-bottom: 16px;
+
+    @media (max-width: 1023px) {
+        margin-bottom: 10px;
+    }
+}
+
+.new-password__form .form__item {
+    @media (max-width: 1023px) {
+        row-gap: 4px;
+    }
+}
