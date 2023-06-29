@@ -1,8 +1,3 @@
 export const Form = () => {
-    return (
-        <form className="form">
-
-        </form>
-
-        );
-    };
+    return <form className="form"></form>;
+};

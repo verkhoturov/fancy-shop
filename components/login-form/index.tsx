@@ -1,8 +1,3 @@
 export const LoginForm = () => {
-    return (
-        <div className="login-form">
-
-        </div>
-
-        );
-    };
+    return <div className="login-form"></div>;
+};

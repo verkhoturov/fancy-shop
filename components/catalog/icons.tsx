@@ -1,5 +1,11 @@
 export const SearchIcon = () => (
-    <svg width="128" height="128" viewBox="0 0 128 128" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <svg
+        width="128"
+        height="128"
+        viewBox="0 0 128 128"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+    >
         <g id="Search">
             <g id="Group">
                 <path
