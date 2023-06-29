@@ -10,7 +10,10 @@ export const ProductSlider = () => {
                     <button className="pagination__button" type="button"></button>
                 </li>
                 <li className="pagination__item">
-                    <button className="pagination__button pagination__button--active" type="button"></button>
+                    <button
+                        className="pagination__button pagination__button--active"
+                        type="button"
+                    ></button>
                 </li>
                 <li className="pagination__item">
                     <button className="pagination__button" type="button"></button>
@@ -20,7 +23,10 @@ export const ProductSlider = () => {
                 </li>
             </ol>
             <button className="product-slider__button" type="button"></button>
-            <button className="product-slider__button product-slider__button--reverse" type="button"></button>
+            <button
+                className="product-slider__button product-slider__button--reverse"
+                type="button"
+            ></button>
         </div>
     );
 };

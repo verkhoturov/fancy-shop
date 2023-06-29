@@ -1,52 +1,52 @@
 @font-face {
-    font-family: "Geometria";
-    src: url("../fonts/GeometriaMedium.woff") format("woff");
+    font-family: 'Geometria';
+    src: url('../fonts/GeometriaMedium.woff') format('woff');
     font-style: normal;
     font-weight: 500;
     font-display: swap;
 }
 
 @font-face {
-    font-family: "Geometria";
-    src: url("../fonts/GeometriaBold.woff") format("woff");
+    font-family: 'Geometria';
+    src: url('../fonts/GeometriaBold.woff') format('woff');
     font-style: normal;
     font-weight: 700;
     font-display: swap;
 }
 
 @font-face {
-    font-family: "Geometria";
-    src: url("../fonts/GeometriaExtraBold.woff") format("woff");
+    font-family: 'Geometria';
+    src: url('../fonts/GeometriaExtraBold.woff') format('woff');
     font-style: normal;
     font-weight: 800;
     font-display: swap;
 }
 
 @font-face {
-    font-family: "Geometria";
-    src: url("../fonts/GeometriaExtraBold.woff") format("woff");
+    font-family: 'Geometria';
+    src: url('../fonts/GeometriaExtraBold.woff') format('woff');
     font-style: normal;
     font-weight: 900;
     font-display: swap;
 }
 
 @font-face {
-    font-family: "Roboto";
-    src: url("../fonts/RobotoBold.woff") format("woff");
+    font-family: 'Roboto';
+    src: url('../fonts/RobotoBold.woff') format('woff');
     font-style: normal;
     font-weight: 700;
     font-display: swap;
 }
 
 body {
-    font-family: "Geometria";
+    font-family: 'Geometria';
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
     line-height: 20px;
-    color: #FFFFFF;
+    color: #ffffff;
     background-color: #000000;
-    background-image: url("./body-bg.png");
+    background-image: url('./body-bg.png');
     background-size: contain;
     background-repeat: repeat;
 }

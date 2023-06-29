@@ -1,5 +1,5 @@
-import { Filters } from "../filters";
-import { ProductsList } from "../products-list";
+import { Filters } from '../filters';
+import { ProductsList } from '../products-list';
 
 export const Catalog = () => {
     return (
@@ -7,7 +7,5 @@ export const Catalog = () => {
             <Filters />
             <ProductsList />
         </section>
-
-
     );
 };

@@ -1,10 +1,10 @@
 .footer {
-    @media (max-width: 1023px) { 
+    @media (max-width: 1023px) {
     }
 }
 
 .footer__menu {
-    background: #1D1C1C;
+    background: #1d1c1c;
     height: 141px;
 
     display: flex;
@@ -17,7 +17,6 @@
         padding: 16px 0;
     }
 }
-
 
 .footer__inner {
     width: 100%;
@@ -81,7 +80,6 @@
 }
 
 .footer__note {
-
     flex: 0 0 736px;
     max-width: 736px;
 
@@ -109,11 +107,11 @@
 }
 
 .footer__address {
-
     flex: 0 0 290px;
     max-width: 290px;
 
-    > p, > address {
+    > p,
+    > address {
         font-size: 12px;
         line-height: normal;
         letter-spacing: 0.6px;
@@ -128,7 +126,8 @@
         flex: 0 0 100%;
         max-width: 100%;
 
-        > p, > address {
+        > p,
+        > address {
             font-size: 7px;
             letter-spacing: 0.35px;
         }

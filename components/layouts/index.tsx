@@ -1,12 +1,12 @@
-import { ReactNode } from "react";
-import styles from "./index.module.scss";
+import { ReactNode } from 'react';
+import styles from './index.module.scss';
 
 interface Props {
-  children?: ReactNode;
+    children?: ReactNode;
 }
 
 export const Main = ({ children }: Props) => <main className="main">{children}</main>;
 
 export const Section = ({ children }: Props) => (
-  <section className={styles.section}>{children}</section>
+    <section className={styles.section}>{children}</section>
 );

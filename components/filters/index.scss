@@ -23,7 +23,6 @@
     }
 }
 
-
 .filters__search-input {
     font-family: Geometria;
     font-weight: 500;
@@ -94,10 +93,10 @@
 
 .filters__count {
     &::before {
-        content: "("
+        content: '(';
     }
 
     &::after {
-        content: ")";
+        content: ')';
     }
 }

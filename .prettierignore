@@ -1,0 +1,6 @@
+dist/
+build/
+out/
+.next/
+coverage/
+/apps/*/public/
