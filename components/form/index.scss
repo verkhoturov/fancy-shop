@@ -1,0 +1,34 @@
+.form {
+    display: flex;
+    flex-direction: column;
+    row-gap: 24px;
+
+    @media (max-width: 1023px) {
+        row-gap: 16px;
+    }
+}
+
+.form__item:last-of-type {
+    margin-bottom: 24px;
+
+    @media (max-width: 1023px) {
+        margin-bottom: 12px;
+    }
+}
+
+.form__button {
+    font-family: inherit;
+    flex-grow: 1;
+}
+
+.button--form {
+    padding: 20px 40px;
+    font-weight: 700;
+    line-height: 100%;
+
+    @media (max-width: 1023px) {
+        padding: 12px 32px;
+        font-size: 14px;
+        font-weight: 800;
+    }
+}
