@@ -1,0 +1,50 @@
+.toggle {
+    display: flex;
+    width: 360px;
+    border: 1px solid #858573;
+    border-radius: 24px;
+    background-color: #343434;
+
+    @media (max-width: 600px) {
+        width: 288px;
+        border-radius: 12px;
+    }
+}
+
+.toggle__button {
+    width: 182px;
+    padding: 22px 0;
+    font-family: Geometria;
+    font-weight: 500;
+    font-size: 16px;
+    border-radius: 24px;
+    text-align: center;
+    color: #eaedbd;
+    background-color: #343434;
+    z-index: 1;
+
+    &:last-child {
+        margin-left: -6px;
+    }
+
+    &--active {
+        color: #6b5a25;
+        background-color: #fbffca;
+        outline: 1px solid #eaedbd;
+        position: relative;
+        z-index: 2;
+    }
+
+    @media (max-width: 1023px) {
+        width: 150px;
+        padding: 11px 0;
+        font-weight: 700;
+        font-size: 12px;
+        line-height: 100%;
+        border-radius: 12px;
+
+        &:last-child {
+            margin-left: -9px;
+        }
+    }
+}
