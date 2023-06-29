@@ -9,6 +9,8 @@
     display: flex;
     align-items: center;
 
+    position: relative;
+
     @media (max-width: 1023px) {
         height: 71px;
         max-width: 460px;
@@ -51,4 +53,42 @@
     @media (max-width: 1023px) {
         display: none;
     }
+}
+
+.header__cart-button {
+    position: relative;
+
+    &::before {
+        content: '2';
+        width: 13px;
+        height: 13px;
+
+        background: #ff6579;
+        border-radius: 50%;
+
+        color: white;
+
+        font-size: 10px;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        position: absolute;
+        top: 24px;
+        left: 25px;
+    }
+}
+
+.modal {
+    width: 380px;
+    min-height: 852px;
+
+    background: #1d1c1c;
+
+    z-index: 100;
+
+    position: absolute;
+    top: 24px;
+    right: 20px;
 }

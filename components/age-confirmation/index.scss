@@ -1,0 +1,90 @@
+.age-confirmation {
+    height: 100vh;
+    width: 100vw;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    z-index: 10000;
+
+    padding: 20px;
+    background: white;
+
+    @media (max-width: 1023px) {
+        padding: 8px;
+    }
+}
+
+.age-confirmation__inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    height: 100%;
+    width: 100%;
+
+    border-radius: 24px;
+
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-bottom: 100px;
+
+    background-color: #000000;
+    background-image: url('./bg.png');
+    background-size: contain;
+    background-repeat: repeat;
+}
+
+.age-confirmation__logo {
+    width: 138px;
+    height: 47px;
+
+    margin-bottom: 77px;
+
+    @media (max-width: 1023px) {
+        margin-bottom: 50px;
+    }
+}
+
+.age-confirmation__title {
+    text-align: center;
+    font-size: 65px;
+    font-family: Geometria;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+    text-transform: uppercase;
+
+    margin-bottom: 50px;
+
+    > .br {
+        display: none;
+    }
+
+    @media (max-width: 1023px) {
+        font-size: 35px;
+        line-height: 115%;
+        margin-bottom: 32px;
+
+        > .br {
+            display: block;
+        }
+    }
+}
+
+.age-confirmation__buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+}
+
+.age-confirmation__button {
+    @media (max-width: 1023px) {
+        font-size: 14px;
+    }
+}
