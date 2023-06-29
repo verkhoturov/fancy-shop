@@ -90,6 +90,7 @@ button {
 
 .main {
     margin-bottom: 90px;
+    min-height: 60vh;
 
     @media (max-width: 1439px) {
         overflow: hidden;

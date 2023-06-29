@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import Link from 'next/link';
 import { useRouter } from 'next/router';
 
 export const LoginForm = () => {
@@ -64,9 +65,9 @@ export const LoginForm = () => {
                             Log in
                         </button>
                     </form>
-                    <a href="" className="login-form__forgot-password">
+                    <Link href="/recovery" className="login-form__forgot-password">
                         Lost your password?
-                    </a>
+                    </Link>
                 </div>
             )}
             {activeTab === 'reg' && (
