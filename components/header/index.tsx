@@ -24,7 +24,7 @@ export const Header = () => {
                     <nav className="header__nav">
                         <ul>
                             <li>
-                                <Link href="/shipping">Shipping</Link>
+                                <Link href="/shipping">Shipping & Returns</Link>
                             </li>
                             <li>
                                 <Link href="/legal/terms-and-conditions">Legal documents</Link>
