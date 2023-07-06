@@ -1,20 +1,22 @@
+import Link from 'next/link';
+
 export const Terms = () => {
     return (
         <section className="section legal">
             <div className="legal__buttons">
                 <ul className="legal__buttons-list">
                     <li className="legal__buttons-item">
-                        <a
+                        <Link
                             className="legal__buttons-link legal__buttons-link--active"
                             href="/legal/terms-and-conditions"
                         >
                             Terms & Conditions
-                        </a>
+                        </Link>
                     </li>
                     <li className="legal__buttons-item">
-                        <a className="legal__buttons-link" href="/legal/privacy-policy">
+                        <Link className="legal__buttons-link" href="/legal/privacy-policy">
                             Privacy policy
-                        </a>
+                        </Link>
                     </li>
                 </ul>
             </div>
