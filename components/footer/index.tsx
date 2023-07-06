@@ -19,10 +19,10 @@ export const Footer = () => (
                 <nav className="footer__nav">
                     <ul>
                         <li>
-                            <Link href="/">Shipping</Link>
+                            <Link href="/shipping">Shipping</Link>
                         </li>
                         <li>
-                            <Link href="/">Legal documents</Link>
+                            <Link href="/legal/terms-and-conditions">Legal documents</Link>
                         </li>
                     </ul>
                 </nav>

@@ -4,12 +4,15 @@ export const Policy = () => {
             <div className="legal__buttons">
                 <ul className="legal__buttons-list">
                     <li className="legal__buttons-item">
-                        <a className="legal__buttons-link" href="#">
+                        <a className="legal__buttons-link" href="/legal/terms-and-conditions">
                             Terms & Conditions
                         </a>
                     </li>
                     <li className="legal__buttons-item">
-                        <a className="legal__buttons-link legal__buttons-link--active" href="#">
+                        <a
+                            className="legal__buttons-link legal__buttons-link--active"
+                            href="/legal/privacy-policy"
+                        >
                             Privacy policy
                         </a>
                     </li>
