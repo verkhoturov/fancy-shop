@@ -84,4 +84,17 @@
             padding: 12px 32px;
         }
     }
+
+    &--form {
+        height: auto;
+        padding: 20px 40px;
+        font-weight: 700;
+        line-height: 100%;
+
+        @media (max-width: 1023px) {
+            padding: 12px 32px;
+            font-size: 14px;
+            font-weight: 800;
+        }
+    }
 }
