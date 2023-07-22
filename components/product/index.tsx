@@ -10,7 +10,7 @@ import {getPercentage} from '@/utils';
 export const Product = ({ product, productAcf }: any) => {
     const [activeTab, setActiveTab] = useState<'desc' | 'rev'>('desc');
 
-	const discount = getPercentage(product.regular_price, product.price)
+	const discount = getPercentage(product?.regular_price, product?.price)
 
 	const config = {
 		modules: [Pagination],
@@ -29,7 +29,7 @@ export const Product = ({ product, productAcf }: any) => {
 	                <div className="product-slider">
 		                {!!discount && <span className="product-slider__discount">-{discount}%</span>}
 		                <Swiper {...config}>
-			                {product.images.map((item: any) => (
+			                {product?.images.map((item: any) => (
 				                <SwiperSlide key={item.id}>
 					                <picture>
 						                <img
@@ -44,11 +44,11 @@ export const Product = ({ product, productAcf }: any) => {
 	                </div>
                 </div>
                 <div className="product__features features">
-	                <h1 className="features__title">{product.name}</h1>
-	                <div className="short-description" dangerouslySetInnerHTML={{__html: product.short_description }} />
+	                <h1 className="features__title">{product?.name}</h1>
+	                <div className="short-description" dangerouslySetInnerHTML={{__html: product?.short_description }} />
                 </div>
                 <div className="product__buying">
-                    <p className="product__price">{product.price} €</p>
+                    <p className="product__price">{product?.price} €</p>
                     <button className="product__button button button--buying" type="button">
                         Preorder now
                     </button>
@@ -75,14 +75,14 @@ export const Product = ({ product, productAcf }: any) => {
                 </div>
                 {activeTab === 'desc' && (
                     <div className="product-detail__item product-detail__item--desc">
-                        <div className="product-detail__desc" dangerouslySetInnerHTML={{ __html: productAcf.content.rendered }}>
+                        <div className="product-detail__desc" dangerouslySetInnerHTML={{ __html: productAcf?.content.rendered }}>
 
                         </div>
                         <div className="product-detail__diagram-wrapper">
                             <picture>
                                 <img
                                     className="product-detail__diagram"
-                                    src={productAcf.acf.scheme}
+                                    src={productAcf?.acf.scheme}
                                     alt="#"
                                 />
                             </picture>

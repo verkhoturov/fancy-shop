@@ -12,7 +12,7 @@ export const FreshOffers = ({ freshOffers }: any) => {
             <h2 className="fresh-offers__title">Fresh offers</h2>
 
             <Swiper spaceBetween={27} slidesPerView={isTablet ? 2 : 4}>
-	            {freshOffers.slice(0, 4).map((prod: any) => (
+	            {freshOffers?.slice(0, 4).map((prod: any) => (
 		            <SwiperSlide key={prod.id}>
 			            <div className="product-card product-card--discount">
 				            <Link className="product-card__link" href={`/product/${prod.slug}`}>

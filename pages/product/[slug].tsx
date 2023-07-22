@@ -8,14 +8,14 @@ import {useProducts} from '@/store';
 export default function ProductPage(props: any) {
 	const [addProducts] = useProducts((state: any) => [state.addProducts])
 	useEffect(()=> {
-		addProducts(props.products)
+		addProducts(props?.products)
 		// eslint-disable-next-line react-hooks/exhaustive-deps
 	}, [props])
 
     return (
         <Page>
             <Product {...props} />
-            <FreshOffers freshOffers={props.freshOffers} />
+            <FreshOffers freshOffers={props?.freshOffers} />
         </Page>
     );
 }
