@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useRouter } from 'next/router';
+import Image from 'next/image';
 
 export const AgeConfirmation = () => {
     const router = useRouter();
@@ -23,8 +24,7 @@ export const AgeConfirmation = () => {
     return (
         <div className="age-confirmation">
             <div className="age-confirmation__inner">
-                <img className="age-confirmation__logo" src="/images/logos/groundedgenetics.png" />
-
+				<Image className="age-confirmation__logo" src="/images/logos/groundedgenetics.png" alt="" />
                 <h1 className="age-confirmation__title">
                     Are you <br className="br" /> over 18 <br />
                     years of age?
