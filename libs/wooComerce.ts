@@ -16,3 +16,12 @@ export async function fetchWooCommerceProducts(apiKey: string) {
 	}
 }
 
+
+export async function fetchWooCommerceProductsPost(apiKey: string, data: any) {
+	try {
+		const response = await api.post(apiKey, data);
+		return response;
+	} catch (error:any) {
+		throw new Error(error);
+	}
+}

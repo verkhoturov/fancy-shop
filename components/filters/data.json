@@ -2,36 +2,43 @@
   {
     "id": 1,
     "title": "All Seeds",
-    "count": 145
+    "count": 145,
+    "slug": "all-seeds"
   },
   {
     "id": 2,
     "title": "RS-11 Line",
-    "count": 2
+    "count": 2,
+    "slug": "rs-11-line"
   },
   {
     "id": 3,
     "title": "Z Road line",
-    "count": 6
+    "count": 6,
+    "slug" : "z-road-line"
   },
   {
     "id": 4,
     "title": "Runtz line",
-    "count": 2
+    "count": 2,
+    "slug": "runtz-line"
   },
   {
     "id": 5,
     "title": "Jealousy line",
-    "count": 1
+    "count": 1,
+    "slug": "jealousy-line"
   },
   {
     "id": 6,
     "title": "Feminized",
-    "count": 62
+    "count": 62,
+    "slug": "feminized"
   },
   {
     "id": 7,
     "title": "Regular",
-    "count": 81
+    "count": 81,
+    "slug": "regular"
   }
 ]

@@ -58,18 +58,14 @@
 .header__cart-button {
     position: relative;
 
-    &::before {
-        content: '2';
+    .card-count {
         width: 13px;
         height: 13px;
 
         background: #ff6579;
         border-radius: 50%;
-
         color: white;
-
         font-size: 10px;
-
         display: flex;
         align-items: center;
         justify-content: center;

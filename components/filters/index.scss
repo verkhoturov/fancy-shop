@@ -91,6 +91,10 @@
     line-height: inherit;
     width: 100%;
     text-align: left;
+    &:disabled {
+        pointer-events: none;
+        background: #333;
+    }
     @media (max-width: 1023px) {
         padding: 8px 20px;
         background-color: #21211d;

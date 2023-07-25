@@ -1,12 +1,26 @@
-import {ChangeEvent, useState} from 'react';
+import {ChangeEvent, useEffect, useState} from 'react';
 import {FilterBtn} from './FilterBtn';
-import data from './data.json';
 import {useProducts} from '@/store';
 
 export const Filters = () => {
-	const [products, addProducts] = useProducts((state: any) => [state.products, state.addProducts])
+	const [products, categories, addProducts] = useProducts((state: any) => [state.products, state.categories, state.addProducts])
 	const [search, setSearch] = useState('')
+	const [selectCategory, setSelectCategory] = useState<string[]>([])
 	const [actualData] = useState(products)
+	const [category, setCategory] = useState([])
+
+	useEffect(()=> {
+		setCategory(categories)
+	}, [categories, setCategory])
+
+	useEffect(()=> {
+		const filtered = selectCategory.length > 0 ?
+			actualData.filter((data: any) =>
+				data.categories.filter((item: any) => selectCategory.includes(item.slug)).length > 0
+			) : actualData
+		addProducts(filtered)
+	}, [selectCategory, addProducts, actualData])
+
 	const onSearch = (e: ChangeEvent<HTMLInputElement>)=> {
 		const value = e.target.value
 		setSearch(value)
@@ -14,7 +28,11 @@ export const Filters = () => {
 		addProducts(fl)
 	}
 
-	console.log(actualData)
+	const onSelect = (slug: string)=> {
+		const hasAlready = selectCategory.includes(slug)
+		if (hasAlready) return setSelectCategory(selectCategory.filter(s => s !== slug))
+		setSelectCategory([...selectCategory, slug])
+	}
 
 	return (
         <div className="catalog__filters filters">
@@ -57,7 +75,13 @@ export const Filters = () => {
                 </svg>
             </div>
             <ul className="filters__list">
-	            {data.map(item => <FilterBtn key={item.id} data={item} />)}
+	            {category?.map((item: any) => (
+					<FilterBtn
+		                key={item.id}
+		                onSelect={onSelect}
+		                data={item}
+					/>))
+				}
             </ul>
         </div>
     );
