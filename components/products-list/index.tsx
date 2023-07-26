@@ -1,20 +1,18 @@
-import {useProducts} from '@/store';
-import {CardItem} from '@/components/products-list/CardItem';
-import {useEffect, useState} from 'react';
+import { useProducts } from '@/store';
+import { CardItem } from '@/components/products-list/CardItem';
+import { useEffect, useState } from 'react';
 
 export const ProductsList = () => {
-	const [data, setData] = useState<any>(null)
-	const [products] = useProducts((state: any) => [state.products])
+    const [data, setData] = useState<any>(null);
+    const [products] = useProducts((state: any) => [state.products]);
 
-	useEffect(()=> {
-		setData(products)
-	}, [products])
+    useEffect(() => {
+        setData(products);
+    }, [products]);
 
     return (
         <ul className="catalog__products products-list">
-	        {data && data.map((product: any) => (
-				<CardItem data={product} key={product.id} />
-	        ))}
+            {data && data.map((product: any) => <CardItem data={product} key={product.id} />)}
 
             {/*<li className="product-card product-card--soon">*/}
             {/*    <Link className="product-card__link" href="/product">*/}
@@ -196,5 +194,5 @@ export const ProductsList = () => {
             {/*    </Link>*/}
             {/*</li>*/}
         </ul>
-    )
+    );
 };

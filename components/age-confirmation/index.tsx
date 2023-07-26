@@ -24,7 +24,7 @@ export const AgeConfirmation = () => {
     return (
         <div className="age-confirmation">
             <div className="age-confirmation__inner">
-				{/* <Image className="age-confirmation__logo" src="/images/logos/groundedgenetics.png" alt="" /> */}
+                {/* <Image className="age-confirmation__logo" src="/images/logos/groundedgenetics.png" alt="" /> */}
                 <h1 className="age-confirmation__title">
                     Are you <br className="br" /> over 18 <br />
                     years of age?

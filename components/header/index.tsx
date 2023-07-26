@@ -1,21 +1,21 @@
-import React, {useEffect, useState} from 'react';
+import React, { useEffect, useState } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import logoImg from './logo.png';
 
 import { Cart } from '../cart';
-import {useProducts} from '@/store';
+import { useProducts } from '@/store';
 
 export const Header = () => {
-	const [basket] = useProducts((state: any) => [state.basket])
-	const [showCart, setShowCart] = useState(false);
-	const [productCount, setProductCount] = useState(0)
+    const [basket] = useProducts((state: any) => [state.basket]);
+    const [showCart, setShowCart] = useState(false);
+    const [productCount, setProductCount] = useState(0);
 
-	useEffect(()=> {
-		setProductCount(basket.length)
-	}, [basket, setProductCount])
+    useEffect(() => {
+        setProductCount(basket.length);
+    }, [basket, setProductCount]);
 
-	return (
+    return (
         <>
             <header className="header">
                 <div className="header__inner">
@@ -44,7 +44,7 @@ export const Header = () => {
                         className="button header__cart-button  button--header"
                         type="button"
                     >
-	                    <span className="card-count">{productCount}</span>
+                        <span className="card-count">{productCount}</span>
                         <svg
                             width="65"
                             height="23"

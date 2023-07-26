@@ -1,2 +1,1 @@
-export {useProducts} from '@/store/product';
-
+export { useProducts } from '@/store/product';

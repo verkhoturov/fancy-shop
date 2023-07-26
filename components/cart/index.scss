@@ -135,7 +135,7 @@
         -webkit-appearance: none;
         margin: 0;
     }
-    &[type=number] {
+    &[type='number'] {
         -moz-appearance: textfield;
     }
 }
@@ -166,7 +166,6 @@
     text-align: center;
 }
 
-
 .order-detail {
     position: relative;
 
@@ -181,7 +180,7 @@
         .order-detail__contact,
         .order-detail__button,
         .order-detail__sum {
-            opacity: .3;
+            opacity: 0.3;
 
             button {
                 pointer-events: none;
@@ -214,7 +213,7 @@
     }
     &__sum-item,
     &__contact-item {
-        color: #EAEDBD;
+        color: #eaedbd;
         &:not(:last-child) {
             margin-bottom: 12px;
         }
@@ -226,4 +225,3 @@
         }
     }
 }
-
