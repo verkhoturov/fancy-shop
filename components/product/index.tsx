@@ -65,7 +65,7 @@ export const Product = ({ reviews, product, productAcf }: any) => {
                             cursor: isAdded ? 'not-allowed' : 'pointer',
                         }}
                     >
-                        Preorder now
+                        Add to cart
                     </button>
                 </div>
             </div>

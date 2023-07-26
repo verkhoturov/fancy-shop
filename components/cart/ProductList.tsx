@@ -1,20 +1,17 @@
 import { CounterControl } from '@/components/cart/CounterControl';
 import { DeleteControl } from '@/components/cart/DeleteControl';
 
+import { EmptyImg } from '../products-list/icon';
+
 interface TProductList {
     basket: any;
 }
 const Item = ({ data }: any) => {
+    const imgSrc = data.images[0]?.src;
     return (
         <li className="cart__item">
             <a className="cart__img-link" href="#">
-                <picture>
-                    <img
-                        className="cart__img"
-                        src={data.images[0]?.src}
-                        alt={data.images[0]?.alt}
-                    />
-                </picture>
+                {imgSrc ? <img className="cart__img" src={imgSrc} alt={''} /> : <EmptyImg />}
             </a>
             <div className="cart__wrapper">
                 <div className="cart__content-wrapper">
