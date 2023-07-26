@@ -26,6 +26,7 @@
     "zustand": "^4.3.9"
   },
   "devDependencies": {
+    "@svgr/webpack": "^8.0.1",
     "@types/woocommerce__woocommerce-rest-api": "^1.0.2",
     "@woocommerce/woocommerce-rest-api": "^1.0.1",
     "prettier": "2.8.8"

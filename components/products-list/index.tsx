@@ -1,18 +1,20 @@
 import {useProducts} from '@/store';
-import {CardItem} from '@/components/products-list/CardItem';
+import {CardItem} from './CardItem';
+import {NoProduct} from './NoProduct';
 import {useEffect, useState} from 'react';
 
 export const ProductsList = () => {
-	const [data, setData] = useState<any>(null)
+	const [data, setData] = useState(null)
 	const [products] = useProducts((state: any) => [state.products])
 
 	useEffect(()=> {
 		setData(products)
-	}, [products])
+	}, [setData, products])
+	console.log(process)
 
-    return (
+    return data && !data?.length ? <NoProduct /> : (
         <ul className="catalog__products products-list">
-	        {data && data.map((product: any) => (
+	        {data?.map((product: any) => (
 				<CardItem data={product} key={product.id} />
 	        ))}
 
