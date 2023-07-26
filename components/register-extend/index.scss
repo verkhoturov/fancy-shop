@@ -1,0 +1,86 @@
+.register-extend__toggle {
+    @media (max-width: 1023px) {
+        margin-bottom: 29px;
+    }
+}
+
+.register-extend__form {
+    display: flex;
+    flex-direction: column;
+}
+
+.register-extend__form-part {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 40px;
+    border: none;
+
+    &:last-of-type {
+        margin-bottom: 51px;
+    }
+
+    @media (max-width: 1023px) {
+        margin-bottom: 32px;
+    }
+}
+
+.register-extend__account-part {
+    margin-bottom: 40px;
+    border: none;
+
+    @media (max-width: 1023px) {
+        margin-bottom: 32px;
+    }
+}
+
+.register-extend__main-part {
+    margin-bottom: 51px;
+    border: none;
+
+    @media (max-width: 1023px) {
+        row-gap: 13px;
+        margin-bottom: 32px;
+    }
+}
+
+.register-extend__item {
+    &--upload {
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        column-gap: 16px;
+
+        @media (max-width: 1023px) {
+            column-gap: 12px;
+        }
+    }
+}
+
+.register-extend .form-item__select {
+    @media (max-width: 1023px) {
+        margin-bottom: 6px;
+    }
+}
+
+.register-extend__item--upload .form-item__label {
+    flex-basis: 100%;
+}
+
+.register-extend__item .form-item__label-upload {
+    min-width: 247px;
+    flex-basis: calc(54% - 8px);
+
+    @media (max-width: 1023px) {
+        min-width: 137px;
+        flex-basis: calc(50% - 6px);
+        text-align: center;
+    }
+}
+
+.register-extend__item .form-item__upload-warning {
+    flex-basis: calc(25% - 8px);
+
+    @media (max-width: 1023px) {
+        flex-basis: calc(46% - 6px);
+    }
+}

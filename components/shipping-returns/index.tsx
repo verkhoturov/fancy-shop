@@ -147,12 +147,13 @@ export const Shipping = () => {
                 <AttentionIcon />
                 <strong className="shipping__warning">Attention!</strong>
                 <p className="shipping__notice-desc">
-                    It is not permitted to sell or send cannabis seeds outside Spain.
+                    It is not permitted to sell or send
+                    <br /> cannabis seeds outside Spain.
                 </p>
                 <p className="shipping__notice-desc shipping__notice-desc--add">
                     The sale and shipment of cannabis seeds
-                    <br /> to the United States and Canada
-                    <br className="shipping__br" /> is not permitted.{' '}
+                    <br className="shipping__br" /> to the United States and Canada
+                    <br className="shipping__br shipping__br--temp" /> is not permitted.{' '}
                 </p>
             </div>
         </section>

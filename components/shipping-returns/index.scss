@@ -1,8 +1,6 @@
 .shipping {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    column-count: 2;
     gap: 25px;
-    align-items: start;
     line-height: 125%;
 
     @media (max-width: 1023px) {
@@ -14,6 +12,8 @@
 }
 
 .shipping__item {
+    break-inside: avoid;
+    margin-bottom: 25px;
     padding: 50px 55px 50px;
     border-radius: 24px;
     background-color: #1d1c1c;
@@ -28,25 +28,9 @@
         }
     }
 
-    &--cost {
-        grid-column: 1/2;
-    }
-
-    &--shipments {
-        grid-column: 1/2;
-    }
-
-    &--time {
-        grid-column: 1/2;
-    }
-
-    &--return {
-        grid-column: 2/3;
-        grid-row: 1/4;
-    }
-
     @media (max-width: 1023px) {
         flex-basis: 100%;
+        margin-bottom: 0;
         padding: 20px 20px 8px;
         border-radius: 0;
 
@@ -175,10 +159,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    grid-column: 2/3;
-    grid-row: 3/4;
-    align-self: flex-end;
-    padding: 59px 80px 60px;
+    padding: 59px 40px 60px;
     text-align: center;
     border-radius: 24px;
     background-color: #343434;
@@ -194,6 +175,7 @@
     > svg {
         flex-basis: 100%;
         flex-shrink: 0;
+        margin-bottom: 20px;
 
         @media (max-width: 1023px) {
             width: 20px;
@@ -206,7 +188,6 @@
 }
 
 .shipping__warning {
-    margin-top: 20px;
     flex-basis: 100%;
     color: #eaedbd;
     font-size: 40px;
@@ -215,6 +196,7 @@
     font-weight: 900;
     letter-spacing: 0.8px;
     text-transform: uppercase;
+    margin-bottom: 32px;
 
     @media (max-width: 1023px) {
         margin-top: 0;
@@ -227,12 +209,12 @@
 }
 
 .shipping__notice-desc {
-    flex-basis: 80%;
-    margin-top: 32px;
+    flex-basis: 100%;
     font-size: 20px;
     line-height: 125%;
     font-weight: 700;
     letter-spacing: 0.4px;
+    margin-bottom: 10px;
 
     @media (max-width: 1023px) {
         margin-top: 0;
@@ -243,8 +225,6 @@
     }
 
     &--add {
-        margin-top: 10px;
-        flex-basis: 100%;
         margin-bottom: 0;
 
         @media (max-width: 1023px) {
@@ -254,9 +234,15 @@
 }
 
 .shipping__br {
-    display: none;
+    @media (min-width: 1023px) and (max-width: 1070px) {
+        display: none;
+    }
 
-    @media (max-width: 1023px) {
-        display: block;
+    &--temp {
+        display: none;
+
+        @media (max-width: 1023px) {
+            display: block;
+        }
     }
 }
