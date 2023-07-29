@@ -1,5 +1,5 @@
 import { useEffect } from 'react';
-import { GetStaticProps, InferGetStaticPropsType, GetServerSideProps } from 'next';
+import { GetServerSideProps } from 'next';
 import { Page } from '../components/page';
 import { Slider } from '../components/slider';
 import { Services } from '../components/services';
@@ -11,7 +11,7 @@ import { checkBasicAuth } from '../libs/basicAuth';
 interface HomeProps {
     categories: any[];
     products: any[];
-};
+}
 
 export default function Home(props: HomeProps) {
     const [addProducts, addCategories] = useProducts((state: any) => [
@@ -57,6 +57,6 @@ export const getServerSideProps: GetServerSideProps = async (context) => {
         props: {
             categories: wooCommerceCategories?.data,
             products: wooCommerceProducts?.data,
-        }
+        },
     };
 };

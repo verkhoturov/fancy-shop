@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import { CounterControl } from '@/components/cart/CounterControl';
 import { DeleteControl } from '@/components/cart/DeleteControl';
 
@@ -11,7 +12,7 @@ const Item = ({ data }: any) => {
     return (
         <li className="cart__item">
             <a className="cart__img-link" href="#">
-                {imgSrc ? <img className="cart__img" src={imgSrc} alt={''} /> : <EmptyImg />}
+                {imgSrc ? <Image className="cart__img" src={imgSrc} alt={''} /> : <EmptyImg />}
             </a>
             <div className="cart__wrapper">
                 <div className="cart__content-wrapper">
