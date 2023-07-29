@@ -1,6 +1,7 @@
-import { useProducts } from '@/store';
-import { CardItem } from '@/components/products-list/CardItem';
-import { useEffect, useState } from 'react';
+import {useProducts} from '@/store';
+import {CardItem} from './CardItem';
+import {NoProduct} from './NoProduct';
+import {useEffect, useState} from 'react';
 
 export const ProductsList = () => {
     const [data, setData] = useState<any>(null);
@@ -10,9 +11,11 @@ export const ProductsList = () => {
         setData(products);
     }, [products]);
 
-    return (
+    return data && !data?.length ? <NoProduct /> : (
         <ul className="catalog__products products-list">
-            {data && data.map((product: any) => <CardItem data={product} key={product.id} />)}
+	        {data?.map((product: any) => (
+				<CardItem data={product} key={product.id} />
+	        ))}
 
             {/*<li className="product-card product-card--soon">*/}
             {/*    <Link className="product-card__link" href="/product">*/}
