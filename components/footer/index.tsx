@@ -83,8 +83,8 @@ export const Footer = () => {
                 </div>
 
                 <div className="footer__payment">
-                    <Image src={isTablet ? MastercardMobile : Mastercard} alt="" />
-                    <Image src={Visa} alt="" />
+                    <Image src={isTablet ? MastercardMobile.src : Mastercard.src} alt="" />
+                    <Image src={Visa.src} alt="" />
                 </div>
             </div>
         </footer>
