@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import { getPercentage, useAddProduct } from '@/utils';
 import Image from 'next/image';
-import EmptyImg from '@/public/empty-img.svg';
+import { EmptyImg } from './icon';
 
 export const CardItem = ({ data }: TCardItem) => {
     const { isAdded, addProduct } = useAddProduct(data.id);

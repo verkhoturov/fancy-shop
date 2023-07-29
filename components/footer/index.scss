@@ -37,7 +37,7 @@
         height: 29px;
     }
 
-    @media (max-width: 359px) {
+    @media (max-width: 389px) {
         width: 50px;
         height: auto;
     }
@@ -84,6 +84,9 @@
 
     @media (max-width: 1279px) {
         padding: 16px 16px 45px;
+    }
+
+    @media (max-width: 1023px) {
         align-items: flex-end;
     }
 }

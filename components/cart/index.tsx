@@ -9,12 +9,10 @@ export const Cart = ({ onClose }: { onClose: () => void }) => {
                 <CrossIcon />
             </button>
             <h2 className="cart__title">Cart</h2>
-	        <ProductList />
+            <ProductList />
             <div className="cart__checkout-wrapper">
                 <Link href="/checkout" legacyBehavior>
-	                <a className="cart__checkout-button button button--cart">
-		                Proceed to checkout
-	                </a>
+                    <a className="cart__checkout-button button button--cart">Proceed to checkout</a>
                 </Link>
                 <span className="cart__notice">
                     Shipping costs will be calculated in the next step

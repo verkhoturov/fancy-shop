@@ -83,7 +83,6 @@
             &-bottom {
                 display: flex;
             }
-
         }
 
         .cart__img-link {
@@ -276,8 +275,8 @@
 .cart__img-link {
     > svg {
         display: block;
-        width: 130px;
-        height: 130px;
+        width: 100px;
+        height: 100px;
     }
 }
 

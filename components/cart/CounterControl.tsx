@@ -57,7 +57,7 @@ export const CounterControl = ({ productId }: TCounterControl) => {
     return (
         <div className="cart__amount-container">
             <button
-	            type="button"
+                type="button"
                 className="cart__amount-button"
                 onClick={decrement}
                 style={{ opacity: quantity === 1 ? 0.5 : 1 }}

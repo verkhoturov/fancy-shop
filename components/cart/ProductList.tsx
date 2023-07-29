@@ -1,6 +1,6 @@
 import { CounterControl } from '@/components/cart/CounterControl';
 import { DeleteControl } from '@/components/cart/DeleteControl';
-import EmptyImg from '@/public/empty-img-sm.svg';
+import { EmptyImg } from './empty-img-sm';
 import { useProducts } from '@/store';
 import Link from 'next/link';
 import Image from 'next/image';
@@ -11,11 +11,7 @@ const Item = ({ data }: any) => {
         <li className="cart__item">
             <Link href={`/product/${data.slug}`} legacyBehavior>
                 <a className="cart__img-link">
-                    {imgSrc ? (
-                        <Image src={imgSrc} alt="" width={100} height={100} />
-                    ) : (
-                        <Image src={EmptyImg.src} alt="" width={100} height={100} />
-                    )}
+                    {imgSrc ? <Image src={imgSrc} alt="" width={100} height={100} /> : <EmptyImg />}
                 </a>
             </Link>
             <div className="cart__wrapper">

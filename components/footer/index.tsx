@@ -1,9 +1,8 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import logoImg from './logo.png';
-import Mastercard from './mastercard.svg';
-import MastercardMobile from './mastercard-mobile.svg';
-import Visa from './visa.svg';
+import { MasterCard, MastercardMobile, Visa } from './icons';
+
 import { useScreenSize } from '@/utils';
 
 export const Footer = () => {
@@ -83,8 +82,8 @@ export const Footer = () => {
                 </div>
 
                 <div className="footer__payment">
-                    <Image src={isTablet ? MastercardMobile.src : Mastercard.src} alt="" />
-                    <Image src={Visa.src} alt="" />
+                    {isTablet ? <MastercardMobile /> : <MastercardMobile />}
+                    <Visa />
                 </div>
             </div>
         </footer>
