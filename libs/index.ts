@@ -1,2 +1,2 @@
-export {fetchWooCommerceProductsPost} from './wooComerce';
-export {fetchWooCommerceProducts} from './wooComerce';
+export { fetchWooCommerceProductsPost } from './wooComerce';
+export { fetchWooCommerceProducts } from './wooComerce';

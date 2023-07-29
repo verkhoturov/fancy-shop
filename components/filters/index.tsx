@@ -1,40 +1,50 @@
-import {ChangeEvent, useEffect, useState} from 'react';
-import {FilterBtn} from './FilterBtn';
-import {useProducts} from '@/store';
+import { ChangeEvent, useEffect, useState } from 'react';
+import { FilterBtn } from './FilterBtn';
+import { useProducts } from '@/store';
 
 export const Filters = () => {
-	const [products, categories, addProducts] = useProducts((state: any) => [state.products, state.categories, state.addProducts])
-	const [search, setSearch] = useState('')
-	const [selectCategory, setSelectCategory] = useState<string[]>([])
-	const [actualData] = useState(products)
-	const [category, setCategory] = useState([])
+    const [products, categories, addProducts] = useProducts((state: any) => [
+        state.products,
+        state.categories,
+        state.addProducts,
+    ]);
+    const [search, setSearch] = useState('');
+    const [selectCategory, setSelectCategory] = useState<string[]>([]);
+    const [actualData] = useState(products);
+    const [category, setCategory] = useState([]);
 
-	useEffect(()=> {
-		setCategory(categories)
-	}, [categories, setCategory])
+    useEffect(() => {
+        setCategory(categories);
+    }, [categories, setCategory]);
 
-	useEffect(()=> {
-		const filtered = selectCategory.length > 0 ?
-			actualData.filter((data: any) =>
-				data.categories.filter((item: any) => selectCategory.includes(item.slug)).length > 0
-			) : actualData
-		addProducts(filtered)
-	}, [selectCategory, addProducts, actualData])
+    useEffect(() => {
+        const filtered =
+            selectCategory.length > 0
+                ? actualData.filter(
+                      (data: any) =>
+                          data.categories.filter((item: any) => selectCategory.includes(item.slug))
+                              .length > 0,
+                  )
+                : actualData;
+        addProducts(filtered);
+    }, [selectCategory, addProducts, actualData]);
 
-	const onSearch = (e: ChangeEvent<HTMLInputElement>)=> {
-		const value = e.target.value
-		setSearch(value)
-		const fl = actualData?.filter((item: any) => item.name.toUpperCase().includes(value.toUpperCase()))
-		addProducts(fl)
-	}
+    const onSearch = (e: ChangeEvent<HTMLInputElement>) => {
+        const value = e.target.value;
+        setSearch(value);
+        const fl = actualData?.filter((item: any) =>
+            item.name.toUpperCase().includes(value.toUpperCase()),
+        );
+        addProducts(fl);
+    };
 
-	const onSelect = (slug: string)=> {
-		const hasAlready = selectCategory.includes(slug)
-		if (hasAlready) return setSelectCategory(selectCategory.filter(s => s !== slug))
-		setSelectCategory([...selectCategory, slug])
-	}
+    const onSelect = (slug: string) => {
+        const hasAlready = selectCategory.includes(slug);
+        if (hasAlready) return setSelectCategory(selectCategory.filter((s) => s !== slug));
+        setSelectCategory([...selectCategory, slug]);
+    };
 
-	return (
+    return (
         <div className="catalog__filters filters">
             <div className="filters__search-form">
                 <label className="visually-hidden" htmlFor="search"></label>
@@ -75,13 +85,9 @@ export const Filters = () => {
                 </svg>
             </div>
             <ul className="filters__list">
-	            {category?.map((item: any) => (
-					<FilterBtn
-		                key={item.id}
-		                onSelect={onSelect}
-		                data={item}
-					/>))
-				}
+                {category?.map((item: any) => (
+                    <FilterBtn key={item.id} onSelect={onSelect} data={item} />
+                ))}
             </ul>
         </div>
     );

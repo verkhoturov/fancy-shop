@@ -6,8 +6,8 @@ import NextNProgress from 'nextjs-progressbar';
 export default function App({ Component, pageProps }: AppProps) {
     return (
         <>
-	        <NextNProgress color="#fff" />
-	        <Component {...pageProps} />
+            <NextNProgress color="#fff" />
+            <Component {...pageProps} />
             <AgeConfirmation />
         </>
     );

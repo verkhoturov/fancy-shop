@@ -4,13 +4,12 @@ import {NoProduct} from './NoProduct';
 import {useEffect, useState} from 'react';
 
 export const ProductsList = () => {
-	const [data, setData] = useState(null)
-	const [products] = useProducts((state: any) => [state.products])
+    const [data, setData] = useState<any>(null);
+    const [products] = useProducts((state: any) => [state.products]);
 
-	useEffect(()=> {
-		setData(products)
-	}, [setData, products])
-	console.log(process)
+    useEffect(() => {
+        setData(products);
+    }, [products]);
 
     return data && !data?.length ? <NoProduct /> : (
         <ul className="catalog__products products-list">
@@ -198,5 +197,5 @@ export const ProductsList = () => {
             {/*    </Link>*/}
             {/*</li>*/}
         </ul>
-    )
+    );
 };

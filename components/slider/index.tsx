@@ -16,9 +16,9 @@ export const Slider = () => {
                             we used as the female in this hybrid was bred and selected in-house from
                             regular seeds.
                         </p>
-                        <button className="button button--slider slider__button">
+                        {/* <button className="button button--slider slider__button">
                             Preorder now
-                        </button>
+                        </button> */}
                     </div>
                     <div className="slider__image-wrapper">
                         <div className="slider__picture-wrapper">
