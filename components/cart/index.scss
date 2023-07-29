@@ -55,6 +55,102 @@
     &:last-child {
         border-bottom: 2px solid #343434;
     }
+
+    &.cart__item_second {
+        border: 0;
+        align-items: center;
+        @media (max-width: 1024px) {
+            align-items: stretch;
+        }
+
+        .cart__wrapper {
+            align-items: center;
+            justify-content: flex-end;
+            flex-direction: row;
+
+            @media (max-width: 1024px) {
+                align-items: flex-start;
+                flex-direction: column;
+                .cart__amount-input {
+                    text-align: center;
+                }
+
+                .cart__product-name {
+                    margin-bottom: auto;
+                }
+            }
+
+            &-bottom {
+                display: flex;
+            }
+
+        }
+
+        .cart__img-link {
+            display: flex;
+            align-items: center;
+
+            img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+        .cart__product-name {
+            font-size: 16px;
+            line-height: 110%;
+            margin-left: 12px;
+        }
+        svg,
+        .cart__img {
+            width: 56px;
+            height: 56px;
+        }
+
+        .cart__img-wrap {
+            width: 56px;
+            height: 56px;
+        }
+
+        .card__count {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            min-width: 80px;
+            margin: 0 12px;
+            strong {
+                font-size: 12px;
+                font-style: normal;
+                font-weight: 800;
+                line-height: 120%;
+                color: #343434;
+                text-transform: capitalize;
+                margin-bottom: 5px;
+            }
+        }
+
+        .cart__price-data {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+
+            strong {
+                font-size: 12px;
+                font-style: normal;
+                font-weight: 800;
+                line-height: 120%;
+                color: #343434;
+                text-transform: capitalize;
+                margin-bottom: 5px;
+            }
+        }
+
+        .cart__price {
+            min-width: 80px;
+            &:nth-of-type(2) {
+                margin-right: -12px;
+            }
+        }
+    }
 }
 
 .cart__img {
@@ -62,6 +158,17 @@
     width: 130px;
     height: 130px;
     border-radius: 4px;
+    img {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.cart__img-wrap {
+    img {
+        width: 100%;
+        height: 100%;
+    }
 }
 
 .cart__wrapper {

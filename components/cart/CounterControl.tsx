@@ -28,7 +28,7 @@ export const CounterControl = ({ productId }: TCounterControl) => {
     const [quantity, setQuality] = useState(1);
 
     useEffect(() => {
-        setQuality(lineItems.find((item: any) => item.product_id === productId).quantity);
+        setQuality(lineItems.find((item: any) => item.product_id === productId)?.quantity);
     }, [lineItems, setQuality, productId]);
 
     useEffect(() => {
@@ -57,6 +57,7 @@ export const CounterControl = ({ productId }: TCounterControl) => {
     return (
         <div className="cart__amount-container">
             <button
+	            type="button"
                 className="cart__amount-button"
                 onClick={decrement}
                 style={{ opacity: quantity === 1 ? 0.5 : 1 }}
@@ -64,16 +65,14 @@ export const CounterControl = ({ productId }: TCounterControl) => {
             >
                 -
             </button>
-            <label htmlFor="product-amount"></label>
             <input
                 className="cart__amount-input"
-                id="product-amount"
                 type="number"
                 name="product-amount"
                 value={quantity}
                 onChange={onChange}
             ></input>
-            <button className="cart__amount-button" onClick={increment}>
+            <button className="cart__amount-button" type="button" onClick={increment}>
                 +
             </button>
         </div>
