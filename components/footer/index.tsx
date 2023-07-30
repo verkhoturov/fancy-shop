@@ -82,7 +82,7 @@ export const Footer = () => {
                 </div>
 
                 <div className="footer__payment">
-                    {isTablet ? <MastercardMobile /> : <MastercardMobile />}
+                    {isTablet ? <MastercardMobile /> : <MasterCard />}
                     <Visa />
                 </div>
             </div>
