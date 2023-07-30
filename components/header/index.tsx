@@ -35,7 +35,7 @@ export const Header = () => {
                                 <Link href="/shipping">Shipping & Returns</Link>
                             </li>
                             <li>
-                                <Link href="/legal/terms-and-conditions">Legal documents</Link>
+                                <Link href="/legal/terms-and-conditions">Legal info</Link>
                             </li>
                         </ul>
                     </nav>
