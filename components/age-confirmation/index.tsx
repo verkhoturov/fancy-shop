@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import { useRouter } from 'next/router';
-// import Image from 'next/image';
 
 export const AgeConfirmation = () => {
     const router = useRouter();
